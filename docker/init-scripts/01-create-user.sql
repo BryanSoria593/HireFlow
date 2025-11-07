@@ -1,0 +1,3 @@
+CREATE USER sa WITH PASSWORD 'myd@tabasepostgres';
+ALTER ROLE sa WITH SUPERUSER;
+CREATE DATABASE hireflow OWNER sa;

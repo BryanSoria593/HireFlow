@@ -11,6 +11,7 @@ services:
       POSTGRES_DB: hireflow
     volumes:
       - c:\postgres\postgres-dev-data\data:/var/lib/postgresql/data
+      - c:\SpringBoot\HireFlow\docker\init-scripts:/docker-entrypoint-initdb.d
     deploy:
       resources:
         limits:
